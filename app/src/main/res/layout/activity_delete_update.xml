@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ccc">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Delte/Update"
+        android:textSize="25sp"
+        android:id="@+id/lb_title"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+
+    <EditText
+        android:id="@+id/tx_name"
+        android:layout_below="@+id/lb_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_margin="15dp"
+        android:ems="10"
+        android:hint="Name"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/tx_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/tx_name"
+        android:layout_alignLeft="@+id/tx_name"
+        android:layout_alignRight="@+id/tx_name"
+        android:layout_alignStart="@+id/tx_name"
+        android:layout_below="@+id/tx_name"
+        android:ems="10"
+        android:hint="Email"
+        android:inputType="textEmailAddress" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Update"
+        android:id="@+id/btn_update"
+        android:layout_alignTop="@+id/btn_delete"
+        android:layout_alignRight="@+id/tx_email"
+        android:layout_alignEnd="@+id/tx_email"
+        android:layout_toRightOf="@+id/btn_delete"
+        android:layout_toEndOf="@+id/btn_delete" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Delete"
+        android:id="@+id/btn_delete"
+        android:layout_below="@+id/tx_email"
+        android:layout_toLeftOf="@+id/lb_title"
+        android:layout_alignLeft="@+id/tx_email"
+        android:layout_alignStart="@+id/tx_email" />
+</RelativeLayout>
